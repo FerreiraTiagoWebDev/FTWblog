@@ -10,7 +10,7 @@ const Categories = () => {
     getCategories().then((newCategories) => {
       setCategories(newCategories);
     });
-  }, []);
+  }, [categories]);
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">

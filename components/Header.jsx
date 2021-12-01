@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import NextLink   from "next/Link";
 import { getCategories } from "../services";
 
-const header = () => {
+const Header = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

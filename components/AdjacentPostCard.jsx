@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import Link from 'next/link';
+import NextLink  from 'next/link';
 
 const AdjacentPostCard = ({ post, position }) => (
   <>
@@ -10,7 +10,7 @@ const AdjacentPostCard = ({ post, position }) => (
       <p className="text-white text-shadow font-semibold text-xs">{moment(post.createdAt).format('MMM DD, YYYY')}</p>
       <p className="text-white text-shadow font-semibold text-2xl text-center">{post.title}</p>
     </div>
-    <Link href={`/post/${post.slug}`}><span className="z-10 cursor-pointer absolute w-full h-full" /></Link>
+    <NextLink href={`/post/${post.slug}`}><span className="z-10 cursor-pointer absolute w-full h-full" /></NextLink>
     {position === 'LEFT' && (
       <div className="absolute arrow-btn bottom-5 text-center py-3 cursor-pointer bg-pink-600 left-4 rounded-full">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import Image from 'next/image';
-import Link from 'next/link';
+import NextLink  from 'next/link';
 
 const FeaturedPostCard = ({ post }) => (
   <div className="relative h-72">
@@ -22,7 +22,7 @@ const FeaturedPostCard = ({ post }) => (
         <p className="inline align-middle text-white text-shadow ml-2 font-medium">{post.author.name}</p>
       </div>
     </div>
-    <Link href={`/post/${post.slug}`}><span className="cursor-pointer absolute w-full h-full" /></Link>
+    <NextLink href={`/post/${post.slug}`}><span className="cursor-pointer absolute w-full h-full" /></NextLink>
   </div>
 );
 

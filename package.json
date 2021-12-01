@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "eslint": "^8.3.0",
     "graphql": "^15.7.2",
     "graphql-request": "^3.6.1",
     "html-react-parser": "^1.4.1",

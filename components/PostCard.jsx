@@ -1,6 +1,6 @@
 import React from "react";
 import moment from "moment";
-import NextLink  from "next/Link";
+import NextLink  from "next/link";
 import Image from "next/image"
 
 const PostCard = ({ post }) => {

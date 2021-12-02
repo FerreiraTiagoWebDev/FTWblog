@@ -66,8 +66,10 @@ const PostDetail = ({ post }) => {
         <div className="relative overflow-hidden shadow-md mb-6">
           <Image
             src={post.featuredImage.url}
+            height="350px"
+            width="750px"
             alt=""
-            className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg"
+            className="object-center h-full w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
           />
         </div>
         <div className="px-4 lg:px-0">
